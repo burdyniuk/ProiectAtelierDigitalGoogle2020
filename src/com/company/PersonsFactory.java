@@ -1,14 +1,16 @@
 package com.company;
 
-public class Factory {
-    private static Factory INSTANCE;
+import com.company.Persons.*;
 
-    public Factory() {
+public class PersonsFactory {
+    private static PersonsFactory INSTANCE;
+
+    public PersonsFactory() {
     }
 
-    public static Factory getInstance() {
+    public static PersonsFactory getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new Factory();
+            INSTANCE = new PersonsFactory();
         }
         return INSTANCE;
     }

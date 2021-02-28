@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Persons;
 
 public class Student extends Person {
     private int clasa = 0;

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Persons;
 
 public class Teacher extends Person {
     private String materie;

@@ -1,4 +1,8 @@
-package com.company;
+package com.company.School;
+
+import com.company.Persons.Director;
+import com.company.Persons.Student;
+import com.company.Persons.Teacher;
 
 import java.util.ArrayList;
 

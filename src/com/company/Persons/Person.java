@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Persons;
 
 public abstract class Person {
     private String firstName;
