@@ -1,4 +1,4 @@
-# Burdiniuc Ilie
+# Burdîniuc Ilie
 # Proiect Atelierul Digital Java 2020
 
 ## Am creat un sistem de evidenta personalului (invatatori, director) si elevi.
