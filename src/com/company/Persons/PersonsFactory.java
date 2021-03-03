@@ -1,8 +1,7 @@
-package com.company;
-
-import com.company.Persons.*;
+package com.company.Persons;
 
 public class PersonsFactory {
+    // singleton pattern
     private static PersonsFactory INSTANCE;
 
     public PersonsFactory() {
@@ -15,15 +14,12 @@ public class PersonsFactory {
         return INSTANCE;
     }
 
+    // factory for persons
     public Person createPerson(PersonType type, String firstName, String lastName, String birthdate) {
-        switch (type) {
-            case STUDENT:
-                return new Student(firstName, lastName, birthdate);
-            case TEACHER:
-                return new Teacher(firstName, lastName, birthdate);
-            case DIRECTOR:
-                return new Director(firstName, lastName, birthdate);
-        }
-        return null;
+        return switch (type) {
+            case STUDENT -> new Student(firstName, lastName, birthdate);
+            case TEACHER -> new Teacher(firstName, lastName, birthdate);
+            case DIRECTOR -> new Director(firstName, lastName, birthdate);
+        };
     }
 }

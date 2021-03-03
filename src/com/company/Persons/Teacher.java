@@ -1,5 +1,8 @@
 package com.company.Persons;
 
+/**
+ * Teacher's class.
+ */
 public class Teacher extends Person {
     private String materie;
 

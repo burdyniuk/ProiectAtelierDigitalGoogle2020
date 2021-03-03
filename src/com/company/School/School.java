@@ -6,12 +6,17 @@ import com.company.Persons.Teacher;
 
 import java.util.ArrayList;
 
+/**
+ * School's class.
+ */
 public class School {
-    ArrayList<Student> students = new ArrayList<Student>();
-    ArrayList<Teacher> teachers = new ArrayList<Teacher>();
+    String name;
+    ArrayList<Student> students;
+    ArrayList<Teacher> teachers;
     Director director;
 
-    public School(ArrayList<Student> students, ArrayList<Teacher> teachers, Director director) {
+    public School(String name, ArrayList<Student> students, ArrayList<Teacher> teachers, Director director) {
+        this.name = name;
         this.students = students;
         this.teachers = teachers;
         this.director = director;
@@ -41,10 +46,19 @@ public class School {
         this.director = director;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "School{" +
-                "students=" + students +
+                "name=" + name +
+                ", students=" + students +
                 ", teachers=" + teachers +
                 ", director=" + director +
                 '}';

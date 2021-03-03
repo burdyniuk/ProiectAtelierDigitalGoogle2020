@@ -1,5 +1,8 @@
 package com.company.Persons;
 
+/**
+ * Student's class.
+ */
 public class Student extends Person {
     private int clasa = 0;
 
@@ -18,9 +21,9 @@ public class Student extends Person {
     @Override
     public String toString() {
         return "Student{" +
-                "prenume='" + getFirstName() + "'," +
-                "nume='" + getLastName() + "'," +
-                "data de nastere='" + getBirthdate() + "'," +
+                "prenume='" + getFirstName() + "', " +
+                "nume='" + getLastName() + "', " +
+                "data de nastere='" + getBirthdate() + "', " +
                 "clasa=" + clasa +
                 '}';
     }

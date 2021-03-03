@@ -1,5 +1,8 @@
 package com.company.Persons;
 
+/**
+ * Abstract class of persons, other classes extends it.
+ */
 public abstract class Person {
     private String firstName;
     private String lastName;
